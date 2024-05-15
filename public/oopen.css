@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#icon:hover{
+  fill: rgba(255, 0, 0, 0.403);
+}
+
+.leaf1 .leaf2{
+    position: absolute;
+    z-index: 1;
+    top: 10cm;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 5%;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+header h1 {
+    font-size: 40px;
+    color: white;
+}
+header nav {
+    display: flex;
+    gap: 30px;
+}
+header nav a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 99px;
+    transition: 0.3s;
+    color: white;
+}
+header nav a.active {
+    background: red;
+}
+header nav a:hover {
+    background: red;
+}
+header nav:hover > a:not(:hover) {
+    background: none;
+}
+
+.home {
+    display: flex;
+    height: 100dvh;
+    background: url(assets/backdrop.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.home img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.home .title {
+    position: absolute;
+    z-index: 0;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 80px;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about {
+    padding: 50px;
+   
+    color: white;
+    position: relative;
+    z-index: 100;
+}
+.about h1 {
+    font-size: 40px;
+}
+
+@media (max-width: 1300px) {
+    #footer-img{
+        transform: translate(17% , 14%);
+       }
+}
+
+@media (max-width: 1120px) {}
+
+@media (max-width: 992px) {
+   
+
+}
+
+@media (max-width: 767px) {
+   
+   .shape{
+    transform: translate(0 , -3%);
+   }
+
+}
+
+@media (max-width: 576px) {}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 400px) {}
+
+@media (max-width: 360px) {}
+
+@media (min-width: 1200px) {
+ 
+
+
+}
+
+
+@media only screen and (min-width: 600px) {
+  
+}
+
+
+@media only screen and (min-width: 768px) {
+
+}
+
+/* 
+---------------------------------------------------------------- */
+
+.feature_section {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  
+  .feature_section .feature_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .feature_section .feature_container .box {
+   
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin: 0 10px;
+    padding: 45px 15px;
+    background-color: #ffffff;
+    color: #000000;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    box-shadow: 1px 2px 5px 7px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 2px 5px 7px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 2px 5px 7px rgba(0, 0, 0, 0.5);
+  
+  }
+  
+  .feature_section .feature_container .box .img-box {
+    width: 90px;
+    height: 90px;
+  
+  }
+  
+  .feature_section .feature_container .box .img-box svg {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    fill: #726dae;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  .feature_section .feature_container .box .img-box svg path {
+    fill: #726dae;
+  }
+  
+  .feature_section .feature_container .box .name {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-bottom: 0;
+    
+  }
+
+.shape svg {
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+    width: 100vw;
+    right: 0;
+    z-index: 0;
+  }
+  
+.shape svg path {
+    fill: #161616;
+  }
+  
+  @media (max-width: 1199.98px) {
+    .header .shape svg {
+      bottom: -15px;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .header .shape svg {
+      bottom: 0;
+    }
+  }
+
+  
+.social-link {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background: #ddd;
+  text-decoration: none;
+  color: #555;
+}
+
+.progress {
+  height: 10px;
+}
+
+
+
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1750px);
+  }
+}
+.slider {
+  background: #161616;
+  box-shadow: 0 10px 20px -5px rgba(255, 255, 255, 0.125);
+  height: 300px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, #161616 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 300px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: 3500px;
+}
+.slider .slide {
+  height: 300px;
+  width: 450px;
+}/*# sourceMappingURL=oopen1.css.map */
+
+.shopChart:hover{
+   transform: scale(1.5,1.5);
+}
+
+
+.promptBox {
+  height: 100px;
+  width: 100px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 70%;
+  left: 42%;
+  opacity: 1;
+  transition: 300ms;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.tapperoo {
+  height: 48px;
+  width: 100px;
+  position: absolute;
+  top: -5px;
+  left: 50px;
+  border-radius: 100px;
+  background-color: #fff;
+  z-index: -1;
+  animation: tapperoo 3s infinite;
+}
+
+@keyframes tapperoo {
+  0% {
+    height: 25%;
+    width: 25%;
+  }
+
+  50% {
+    height: 5%;
+    width: 35%;
+    opacity: 0;
+    transform: translate(-250%);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+#tap-gesture {
+  position: absolute;
+  transform: rotate(30deg);
+  animation: handMove 3s infinite;
+}
+
+@keyframes handMove {
+  0% {
+    transform: rotate(30deg);
+  }
+
+  50% {
+    transform: translate(-60%, -10%) rotate(-30deg) scale(0.9);
+  }
+
+  100% {
+    transform: rotate(30deg);
+  }
+}
